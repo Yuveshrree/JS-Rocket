@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Modern Rocket Launch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="scripts/rocket.js"></script>
+  </head>
+  <body class="body_state_1">
+    <div class="left">
+      <div class="state_1">
+        <h1>Modern JavaScript Rocket Launch!!</h1>
+        <a href="#" class="button" onclick="changeState(2)">Launch the Rocket</a>
+      </div>
+      <div class="state_2">
+        <h1>CountDown:  <span id="countDown">10</span></h1>
+        <a href="#" class="button" onclick="changeState(1)">Abort the Launch</a>
+      </div>
+      <div class="state_3">
+        <h1>Take Off!!</h1>
+      </div>
+      <div class="state_4">
+        <h1>Awesome!!</h1>
+        <a href="#" class="button" onclick="changeState(1)">Wanna Launch again!?</a>
+      </div>
+      <div class="state_5">
+        <h1>Mission Failure!!</h1>
+        <a href="#" class="button" onclick="changeState(1)">Give it another shot!</a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="ground"></div>
+      <div class="rocket"></div>
+    </div>
+  </body>
+</html>

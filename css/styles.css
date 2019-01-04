@@ -1,3 +1,54 @@
-body{
-  /* background: red; */
+/* .body_state_1, .body_state_2, .body_state_3, .body_state_4, .body_state_5 {
+  display: block;
+} */
+
+body.body_state_1 .state_1, body.body_state_2 .state_2, body.body_state_3 .state_3, body.body_state_4 .state_4, body.body_state_5 .state_5 { display: block;}
+
+.state_1, .state_2, .state_3, .state_4, .state_5 {
+  display: none;
+}
+
+.left {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #FFEB3B;
+}
+
+.right {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #bbdefb;
+}
+
+.ground {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  background: #4caf50;
+}
+
+.rocket {
+  position: absolute;
+  width: 20px;
+  height: 100px;
+  bottom: 20px;
+  left: 50%;
+  background: red;
+  transition: bottom 10s;
+}
+
+body.body_state_1 .rocket {
+  transition: bottom 1s;
+}
+
+body.body_state_3 .rocket,
+body.body_state_4 .rocket {
+  bottom: 1000px;
 }
