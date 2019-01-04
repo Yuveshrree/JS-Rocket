@@ -16,7 +16,7 @@ var changeState = function (state) {
         if(number <= 0) {
           changeState(3);
         };
-    }, 400);
+    }, 800);
   } else if (state == 3){
     var success = setTimeout( function () {
       var randomNumber = Math.round(Math.random()*10);
@@ -26,6 +26,6 @@ var changeState = function (state) {
       } else {
         changeState(5);
       }
-    }, 1000);
+    }, 2000);
   };
 };

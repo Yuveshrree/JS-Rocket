@@ -41,11 +41,11 @@ body.body_state_1 .state_1, body.body_state_2 .state_2, body.body_state_3 .state
   bottom: 20px;
   left: 50%;
   background: red;
-  transition: bottom 10s;
+  transition: bottom 8s;
 }
 
 body.body_state_1 .rocket {
-  transition: bottom 1s;
+  transition: bottom 2s;
 }
 
 body.body_state_3 .rocket,
